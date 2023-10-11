@@ -13,7 +13,7 @@ import org.apache.poi.xssf.usermodel.XSSFWorkbook;
 public class ReadDataExcel {
 
 	public static void main(String[] args) throws IOException {
-String excelfilepath = "C:\\Users\\sonal\\Desktop\\mytestdata\\testdata1.xlsx";
+String excelfilepath = "C:\\Users\\Premkumar\\Desktop\\mytestdata\\testdata1.xlsx";
 
 
 // Give the location of  the file
