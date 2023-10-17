@@ -1,0 +1,33 @@
+package com.app.junit;
+
+import org.junit.jupiter.api.Test;
+import org.junit.jupiter.api.condition.EnabledForJreRange;
+import org.junit.jupiter.api.condition.EnabledOnJre;
+import org.junit.jupiter.api.condition.EnabledOnOs;
+import org.junit.jupiter.api.condition.JRE;
+import org.junit.jupiter.api.condition.OS;
+
+public class ExtensionDemo {
+
+	@Test
+	@EnabledOnOs(OS.MAC)
+	public void conditionOS()
+	{
+		System.out.println("Executed Test cases on Mac");
+	}
+	
+	@Test
+	@EnabledOnJre(JRE.JAVA_14) 
+	public void conditionJRE()
+	{
+		System.out.println("Executed Test cases for my Java Version");
+	}
+	
+	@Test
+	@EnabledForJreRange(min = JRE.JAVA_10, max = JRE.JAVA_20)/
+	public void conditionJRErange()
+	{
+		System.out.println("Executed Test cases on machine with java version 11 to 20");
+	}	
+	
+}
