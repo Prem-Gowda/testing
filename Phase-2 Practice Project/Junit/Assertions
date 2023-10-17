@@ -1,0 +1,27 @@
+package com.app.junit;
+
+import org.junit.jupiter.api.Assertions;
+import org.junit.jupiter.api.Test;
+
+public class JunitAssertion {
+	
+	@Test
+	public void testAssertion() {
+		String excepted = new String("abc");
+		String actual =new String("abc");
+		String str = "junit";
+		String str2 = null;
+		int val1=10;
+		int val2=20;
+		String [] array1 = {"one","two","three"};
+		String [] array2 = {"one","two","three"};
+//		Assertions.assertEquals(excepted,actual);
+//		Assertions.assertTrue(val1<val2);
+//		Assertions.assertNotNull(str);
+//		Assertions.assertNull(str2);
+//		Assertions.assertSame(excepted, actual);
+//		Assertions.assertNotSame(str, str2);
+		Assertions.assertArrayEquals(array1,array2);
+		
+	}
+}
