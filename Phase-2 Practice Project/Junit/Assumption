@@ -1,0 +1,24 @@
+package com.app.junit;
+
+import org.junit.jupiter.api.Assumptions;
+import org.junit.jupiter.api.DisplayName;
+import org.junit.jupiter.api.RepeatedTest;
+import org.junit.jupiter.api.Test;
+
+public class TestRepeated {
+	
+	@RepeatedTest(3)
+	@DisplayName("repeatedtest")
+	
+	public void repeated() {
+		System.out.println("Learning Junit");
+	}
+	
+	@Test
+	public void AssumptionsDemo() {
+		boolean isServerUp = true;
+		Assumptions.assumeTrue(isServerUp,"Server is not up");
+		System.out.println("Create table and insert data");
+	}
+
+}
